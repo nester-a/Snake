@@ -24,13 +24,9 @@ namespace Snake
 
             //отрисовка точек
             Point p = new Point(4, 5, '*');
-            p.Draw();
-
-            Emploee e = new Emploee();
-            e.age = 42;
-            e.pay = 30000;
-
-            Console.ReadLine();
+            Snake snake = new Snake(p, 4, Direction.RIGHT);
+            snake.Draw();
+            Console.ReadKey();
         }
     }
 }
